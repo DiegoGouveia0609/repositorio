@@ -1,0 +1,18 @@
+.my-section {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .my-section img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  
+  .my-section h2 {
+    color: #333;
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  
+  
