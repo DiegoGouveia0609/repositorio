@@ -1,18 +1,74 @@
-.my-section {
-    text-align: center;
-    margin-top: 50px;
-  }
-  
-  .my-section img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-  }
-  
-  .my-section h2 {
-    color: #333;
-    font-size: 24px;
-    margin-top: 10px;
-  }
-  
-  
+/* Estilo geral */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Espaçamentos internos e margens */
+.container {
+  padding: 20px;
+  margin: 20px;
+}
+
+/* Bordas */
+.elemento-com-borda {
+  border: 1px solid black;
+}
+
+/* Esquema de cores */
+:root {
+  --cor-primaria: #ff00ea;
+  --cor-secundaria: #0000FF;
+}
+
+.elemento-com-cor {
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+}
+
+/* Tipografia */
+.titulo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Botões para abrir e fechar o menu de navegação */
+.menu-button {
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Ícones para representar os botões de abrir e fechar o menu */
+.menu-button::before {
+  content: "\2630";
+  margin-right: 5px;
+}
+
+.menu-close-button::before {
+  content: "\2716";
+  margin-right: 5px;
+}
+
+/* Ocultar o menu de navegação e o botão de fechar, e mostrar o botão de abrir o menu */
+.menu {
+  display: none;
+}
+
+.menu-button.open {
+  display: none;
+}
+
+.menu-button.close {
+  display: inline-block;
+}
+
+/* Mostrar e ocultar o menu de navegação com cliques nos botões de abrir e fechar */
+.menu-button.open ~ .menu {
+  display: block;
+}
+
+.menu-button.close ~ .menu {
+  display: none;
+}
